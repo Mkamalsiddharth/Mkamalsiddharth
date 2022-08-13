@@ -8,14 +8,14 @@ import sys
 
 print("-"*50)
 Banner = "Welcome To CyBenSec Port Scanning"
-Sub = "Enter Ip address to scan"
+Sub = "Enter Ip address or Domain to scan"
 print(Banner.center(20))
 print(Sub.center(22))
 print("-"*50)
 
 #storing user input as userinput
 
-userinput=input("Target ip address : ").strip()
+userinput=input("Target : ").strip()
 
 #name resolution error handling
 try:
