@@ -20,6 +20,7 @@ userinput=input("Target : ").strip()
 #name resolution error handling
 try:
     target_ip = socket.gethostbyname(userinput)
+    print(f"The IP address acquired from {userinput} is {target_ip}")
 except:
     socket.gaierror
     sys.exit()
