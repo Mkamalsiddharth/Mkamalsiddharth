@@ -15,7 +15,7 @@ print("-"*50)
 
 #storing user input as userinput
 
-userinput=input(Target ip address : ").strip()
+userinput=input("Target ip address : ").strip()
 
 #name resolution error handling
 try:
