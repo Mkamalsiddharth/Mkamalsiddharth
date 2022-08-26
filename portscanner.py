@@ -1,4 +1,4 @@
-#!usr/bin/python3.10.6
+#!  usr/bin/python3.10.6
 
 import socket
 import threading
