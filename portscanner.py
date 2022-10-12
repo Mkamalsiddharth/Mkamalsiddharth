@@ -4,6 +4,7 @@ import socket
 import threading
 import sys
 import time
+import tqdm
 
 #Welcome banner
 print("-"*50)
@@ -35,7 +36,7 @@ def scan_port(port):
         s.close()
 print(f"Scanning for {userinput} is in progress......")
 #implementing scan funcation with all ports(65536) at a time using threading
-for port in range(65536):
+for port in tqdm(range(65536)):
     thread = threading.Thread(target=scan_port, args=(port,))
     thread.start()
 
